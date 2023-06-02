@@ -1,2 +1,17 @@
 @import './common';
 @import './example';
+
+@import './utils/common';
+@import './utils/_utils.sass';
+
+@import './variables/_breakpoints.sass';
+@import './variables/_variables.sass';
+
+@import './components/_about-us.sass';
+@import './components/_footer.sass';
+@import './components/_header.sass';
+@import './components/_main-section.sass';
+@import './components/_modal.sass';
+@import './components/_plagination.sass';
+@import './components/_search-by-country.sass';
+@import './components/_search-by-word.sass';
