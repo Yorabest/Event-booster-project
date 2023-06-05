@@ -1,0 +1,67 @@
+{
+   "people":[ 
+       {
+          "name": "Микола Саламаха",
+           "work": "work",
+          "photo": "photo",
+          "e-mail": "e-mail",
+          "git": "git"
+        },
+         {
+          "name": "name",
+          "work": "work",
+          "photo": "photo",
+           "e-mail": "e-mail",
+          "git": "git"
+        },
+        {
+          "name": "name",
+          "work": "work",
+          "photo": "photo",
+           "e-mail": "e-mail",
+          "git": "git"
+        },
+        {
+          "name": "name",
+          "work": "work",
+          "photo": "photo",
+           "e-mail": "e-mail",
+          "git": "git"
+        },
+        {
+          "name": "name",
+          "work": "work",
+          "photo": "photo",
+           "e-mail": "e-mail",
+          "git": "git"
+        },
+        {
+          "name": "name",
+          "work": "work",
+          "photo": "photo",
+           "e-mail": "e-mail",
+          "git": "git"
+        },
+        {
+          "name": "name",
+          "work": "work",
+          "photo": "photo",
+           "e-mail": "e-mail",
+          "git": "git"
+        },
+        {
+          "name": "name",
+          "work": "work",
+          "photo": "photo",
+           "e-mail": "e-mail",
+          "git": "git"
+        },
+        {
+          "name": "name",
+          "work": "work",
+          "photo": "photo",
+           "e-mail": "e-mail",
+          "git": "git"
+        }
+]
+}
