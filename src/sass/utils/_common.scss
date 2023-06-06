@@ -1,12 +1,45 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
 
+.container {
+  width: 100%;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+
+  @media (min-width: $mobile) {
+    width: 280px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  @media (min-width: $tablet) {
+    width: 610px;
+    padding-left: 7px;
+    padding-right: 7px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 946px;
+    padding-left: 7px;
+    padding-right: 7px;
+  }
+}
+
+.section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
 .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    border: 0;
-    margin: -1px;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  border: 0;
+  margin: -1px;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
