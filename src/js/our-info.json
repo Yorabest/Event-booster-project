@@ -4,64 +4,71 @@
           "name": "Микола Саламаха",
            "work": "work",
           "photo": "photo",
-          "e-mail": "e-mail",
-          "git": "git"
+          "e-mail": "koliunia2006@gmail.com",
+          "git": "https://github.com/MukolaSa"
         },
          {
-          "name": "name",
+          "name": "Влад Гончарук",
           "work": "work",
           "photo": "photo",
-           "e-mail": "e-mail",
-          "git": "git"
+           "e-mail": "vladikhoncharuk@gmail.com",
+          "git": "https://github.com/Vllaaddd"
         },
         {
-          "name": "name",
+          "name": "Потьомко Вероніка",
           "work": "work",
           "photo": "photo",
-           "e-mail": "e-mail",
-          "git": "git"
+           "e-mail": "vnpotomko@gmail.com",
+          "git": "https://github.com/Potyomko"
         },
         {
-          "name": "name",
+          "name": "Хлібов Іван",
           "work": "work",
           "photo": "photo",
            "e-mail": "e-mail",
-          "git": "git"
+          "git": "https://github.com/ivanhlibo"
         },
         {
-          "name": "name",
+          "name": "Романенков Ілля",
           "work": "work",
           "photo": "photo",
-           "e-mail": "e-mail",
-          "git": "git"
+           "e-mail": "ilyadep5@gmail.com",
+          "git": "https://github.com/tinomu85"
         },
         {
-          "name": "name",
+          "name": "Білішук Ілля",
           "work": "work",
           "photo": "photo",
-           "e-mail": "e-mail",
-          "git": "git"
+           "e-mail": "nik333nik888@gmail.com",
+          "git": "https://github.com/Niky-Niky"
         },
         {
-          "name": "name",
+          "name": "Олександр Савранський",
           "work": "work",
           "photo": "photo",
-           "e-mail": "e-mail",
-          "git": "git"
+           "e-mail": "alexsawranskiy989@gmail.com",
+          "git": "https://github.com/AlexSawranskiy"
         },
         {
-          "name": "name",
+          "name": "Олександр Тарнавський",
           "work": "work",
           "photo": "photo",
-           "e-mail": "e-mail",
-          "git": "git"
+           "e-mail": "cmurtimur@gmail.com",
+          "git": "https://github.com/Olexander1234"
         },
         {
-          "name": "name",
+          "name": "Цап Олег",
           "work": "work",
           "photo": "photo",
-           "e-mail": "e-mail",
-          "git": "git"
+           "e-mail": "olehtsap07@gmail.com",
+          "git": "https://github.com/HECKONCHIK"
+        },
+        {
+          "name": "Мельниченко Софія",
+          "work": "work",
+          "photo": "photo",
+           "e-mail": "melnichenko.cofia07@gmail.com",
+          "git": "https://github.com/Yorabest"
         }
 ]
 }
