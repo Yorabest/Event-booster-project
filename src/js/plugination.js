@@ -1,11 +1,14 @@
+import axios  from 'axios';
 import Pagination from 'tui-pagination';
-const Pagination = tui.Pagination
+const API_KEY = 'eXb8ULUoq4HjIKYn2xDLaMMehZFueL04'
+
+
 
 
 const container = document.getElementById('tui-pagination-container');
 console.log(container);
 const options = { // below default value of options
-    totalItems: 10,
+    totalItems: 100,
     itemsPerPage: 10,
     visiblePages: 10,
     page: 1,
@@ -29,6 +32,21 @@ const options = { // below default value of options
             '</a>'
     }
 };
-const pagination = new Pagination(container, options);
+pagination.on('beforeMove', function(eventData) {
+    getEventsByPage(eventData.page).then(data=>console.log(data.data))
+    .then(data=>data._embedded.events)
+    .then(console.log)
+});
 
-pagination.getCurrentPage("https://app.ticketmaster.com/discovery/v2/events.json?size=20&page=0&apikey=eXb8ULUoq4HjIKYn2xDLaMMehZFueL04");
+pagination.on('afterMove', function(eventData) {
+    alert('The current page is ' + eventData.page);
+});
+
+async function getEventsByPage(page) {
+   try{
+    return await axios.get(`https://app.ticketmaster.com/discovery/v2/events.json?size=20&page=${page}&apikey=${API_KEY}`);
+    
+   } catch(error){
+    alert('msg');
+   }
+}
