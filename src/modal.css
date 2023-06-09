@@ -1,0 +1,87 @@
+:root {
+    --blue-color: #4C00FE;
+    --text-color: #FFFFFF;
+    --modal-bgc-color: #FFF2FD;
+    --caps-text-color:  #DC56C5;
+    --main-text-color: #0E0E0E;
+
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    width: 930px;
+    height: 1023px;
+    position: sticky;
+    background-color: var(--modal-bgc-color);
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
+
+
+.style_close{
+    color: var(--blue-color);
+    width: 25px;
+    height: 25px;
+}
+.style_header{
+    color: var(--caps-text-color);
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+}
+.style_tickets-btn{
+font-size: 16px;
+font-weight: 500;
+font-family: "Montserrat", sans-serif;
+color: var(--text-color);
+background-color: var(--blue-color);
+border-radius: 5px;
+width: 145px;
+height: 40px;
+border:none;
+}
+.style_author-btn{
+width: 255px;
+height: 40px;
+font-size: 16px;
+font-weight: 500;
+font-family: "Montserrat", sans-serif;
+color: var(--blue-color);
+background-color: var(--modal-bgc-color);
+border: 1px solid #4C00FE;
+border-radius: 5px;
+border-color: var(--blue-color);
+}
