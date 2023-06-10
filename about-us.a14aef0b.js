@@ -1,0 +1,2 @@
+!function(){var n=document.querySelector("#myModal"),e=document.querySelector("#myBtn"),o=document.querySelector(".close");e.onclick=function(){n.style.display="block"},o.onclick=function(){n.style.display="none"},window.onclick=function(e){e.target===n&&(n.style.display="none")},fetch(/discovery/v2/events/{id:id}).then((function(n){return n.json()})).then((function(n){return console.log(n)}))}();
+//# sourceMappingURL=about-us.a14aef0b.js.map
