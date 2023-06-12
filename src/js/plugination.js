@@ -9,8 +9,8 @@ const container = document.getElementById('tui-pagination-container');
 console.log(container);
 const options = { // below default value of options
     totalItems: 100,
-    itemsPerPage: 10,
-    visiblePages: 10,
+    itemsPerPage: 5,
+    visiblePages: 5,
     page: 1,
     centerAlign: false,
     firstItemClassName: 'tui-first-child',
@@ -24,7 +24,7 @@ const options = { // below default value of options
             '</a>',
         disabledMoveButton:
             '<span class="tui-page-btn tui-is-disabled tui-{{type}}">' +
-                '<span class="tui-ico-{{type}}">{{type}}</span>' +
+                '<span class="tui-ico-{{type}}">{{type}}></span>' +
             '</span>',
         moreButton:
             '<a href="#" class="tui-page-btn tui-{{type}}-is-ellip">' +
@@ -32,15 +32,15 @@ const options = { // below default value of options
             '</a>'
     }
 };
+const pagination = new Pagination(container, options);
+
 pagination.on('beforeMove', function(eventData) {
     getEventsByPage(eventData.page).then(data=>console.log(data.data))
     .then(data=>data._embedded.events)
     .then(console.log)
 });
 
-pagination.on('afterMove', function(eventData) {
-    alert('The current page is ' + eventData.page);
-});
+
 
 async function getEventsByPage(page) {
    try{

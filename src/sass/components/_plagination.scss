@@ -1,0 +1,55 @@
+.tui-pagination{
+    border-radius: none;
+    
+} 
+ body{
+    background-color: black;
+ }
+.tui-page-btn {
+    
+    border-radius: 10px 0px;
+    margin-left: 15px;
+   color: white;
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+    display: inline-block;
+    position: relative;
+    padding: 8px 0 6px;
+    line-height: 1;
+    text-decoration: none;
+    vertical-align: middle;
+}
+
+.tui-pagination .tui-is-selected, .tui-pagination strong {
+
+    background-color: black;
+    border: 1px solid #DC56C5;
+    color: #DC56C5;
+}
+
+.tui-pagination .tui-ico-first {
+    width: 11px;
+    height: 10px;
+    background-position: 0px 0px;
+}
+.tui-pagination .tui-ico-first, .tui-pagination .tui-ico-prev, .tui-pagination .tui-ico-next, .tui-pagination .tui-ico-last, .tui-pagination .tui-ico-ellip {
+   
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 0px;
+}
+.tui-pagination {
+    height: 28px;
+    margin: 14px 0 12px;
+    line-height: normal;
+    text-align: center;
+    font-size: 0;
+}
+
+.ico-prev{
+    
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 0px;
+}
