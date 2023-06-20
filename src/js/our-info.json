@@ -22,10 +22,10 @@
           "git": "https://github.com/Potyomko"
         },
         {
-          "name": "Хлібов Іван",
+          "name": "Хлибов Іван",
           "work": "work",
           "photo": "photo",
-           "mail": "e-mail",
+           "mail": "hlibov2007.7@gmail.com",
           "git": "https://github.com/ivanhlibo"
         },
         {
@@ -38,7 +38,7 @@
         {
           "name": "Білішук Ілля",
           "work": "work",
-          "photo": "photo",
+          "photo": "./images/Bilishuk.jpg",
            "mail": "nik333nik888@gmail.com",
           "git": "https://github.com/Niky-Niky"
         },
@@ -50,9 +50,9 @@
           "git": "https://github.com/AlexSawranskiy"
         },
         {
-          "name": "Олександр Тарнавський",
+          "name": "Тарнавський Олександр",
           "work": "work",
-          "photo": "photo",
+          "photo": "./images/Tarnavsky.jpg",
            "mail": "cmurtimur@gmail.com",
           "git": "https://github.com/Olexander1234"
         },
