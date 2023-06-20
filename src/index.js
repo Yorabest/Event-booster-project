@@ -1,5 +1,5 @@
 import './js/about-this-event';
-import './js/modal';
+// import './js/modal';
 import './js/plugination';
 import './js/search-by-country';
 import './js/search-by-key-word';
