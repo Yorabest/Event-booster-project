@@ -1,6 +1,5 @@
 import json from './our-info.json'
-// import aboutusTpl from '../template/about-us.hbs'
-console.log(json.people[1].mail);
+// console.log(json.people[1].mail);
 // const ourJson = JSON.stringify(json.people)
 // const parse = JSON.parse(ourJson)
 
@@ -17,11 +16,11 @@ const ourCard = document.querySelector('.js-card-container')
 function makeCard(people) {
     const a = people.map(people => 
         `<li class='about-us-li'>
-             <h3>${people.name}</h3>
-             <img>${people.photo}</img>
-             <p>Роботу, яку виконував на проекті : ${people.work}</p>
-             <p>E-mail : ${people.mail}</p>
-             <p>Github : ${people.git}</p>
+             <h3 class='our-h3'>${people.name}</h3>
+             <img class='our-img'>${people.photo}</img>
+             <p class='our-p-work'>Роботу, яку виконував на проекті : ${people.work}</p>
+             <p class='our-p-mail'>E-mail : ${people.mail}</p>
+             <p class='our-p-git'>Github : ${people.git}</p>
         </li>`).join('')
     return a
 }
