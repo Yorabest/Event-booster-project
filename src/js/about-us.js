@@ -15,14 +15,6 @@ function makeCard(people) {
              <p class='our-p-work'>Роботу, яку виконував на проекті : ${people.work}</p>
              <p class='our-p-mail'>E-mail : ${people.mail}</p>
              <p class='our-p-git'>Github : ${people.git}</p>
-
-        `<li>
-             <h3>${people.name}</h3>
-             <p>Роботу, яку виконував на проекті : ${people.work}</p>
-             <img src="${people.photo}" alt="${people.name}"></img>
-             <p>E-mail : ${people.mail}</p>
-             <p>Github : ${people.git}</p>
-
         </li>`).join('')
     return a
 }
