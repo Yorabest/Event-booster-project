@@ -4,5 +4,5 @@ import './js/plugination';
 import './js/search-by-country';
 import './js/search-by-key-word';
 import './js/favorite'
-import './js/cards';
+// import './js/cards';
 import './js/about-us';

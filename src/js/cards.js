@@ -1,6 +1,6 @@
 import axios from 'axios';
 import Handlebars from 'handlebars';
-import templateSource from './cards.hbs';
+import templateSource from '../template/cards.hbs';
 
 const template = Handlebars.compile(templateSource);
 
