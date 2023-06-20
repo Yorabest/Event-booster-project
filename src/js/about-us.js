@@ -7,11 +7,12 @@ function makeCard(people) {
         `<li>
              <h3>${people.name}</h3>
              <p>Роботу, яку виконував на проекті : ${people.work}</p>
-             <img>${people.photo}</img>
+             <img src="${people.photo}" alt="${people.name}"></img>
              <p>E-mail : ${people.mail}</p>
              <p>Github : ${people.git}</p>
         </li>`).join('')
     return a
 }
-const markup = makeCard(json.people)
-ourCard.innerHTML = markup
+const murkup = makeCard(json.people)
+console.log(murkup);
+ourCard.innerHTML = murkup
