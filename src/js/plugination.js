@@ -15,9 +15,9 @@ const options = { // below default value of options
     centerAlign: false,
     firstItemClassName: 'tui-first-child',
     lastItemClassName: 'tui-last-child',
-    
+   
 };
-const pagination = new Pagination(container);
+const pagination = new Pagination(container, options);
 
 
 

@@ -47,26 +47,52 @@
     font-size: 0;
 }
 
-// .tui-ico-prev{
-//     background-image: url("../js/Vector\ 231.svg");
-//     background-size: contain;
-//     background-repeat: no-repeat;
-//     background-position: center;
-//     display: inline-block;
-//     vertical-align: middle;
-//     font-size: 0px;
-//     width: 30px;
-//     height: 30px;
-  
-// }
-// .tui-ico-ellip{
-//     background-image: url("../js/Vector\ 230.svg");
-//     background-size: contain;
-//     background-repeat: no-repeat;
-//     background-position: center;
-//     display: inline-block;
-//     vertical-align: middle;
-//     font-size: 0px;
-//     width: 30px;
-//     height: 30px;
-// }
+
+.tui-last-child{
+    background-image: url("../js/Vector\ 230.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 0px;
+    width: 30px;
+    height: 30px;
+}
+.tui-next{
+    background-image: url("../js/Vector\ 230.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 0px;
+    width: 30px;
+    height: 30px;  
+}
+.tui-prev-is-ellip{
+    background-image: url("../js/Vector\ 231.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 0px;
+    width: 30px;
+    height: 30px;    
+}
+.tui-first{
+    display: none;
+}
+.tui-next{
+    display: none;
+}
+.tui-last{
+    display: none;
+}
+.tui-ico-prev{
+    display: no;
+}
+.tui-prev{
+    display: none;
+}
