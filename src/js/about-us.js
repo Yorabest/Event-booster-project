@@ -20,5 +20,5 @@ function makeCard(people) {
     return a
 }
 const murkup = makeCard(json.people)
-console.log(murkup);
+// console.log(murkup);
 ourCard.innerHTML = murkup
