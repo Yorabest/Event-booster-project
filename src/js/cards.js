@@ -1,8 +1,6 @@
 import axios from 'axios';
 // import Handlebars from 'handlebars';
 import templateSource from '../template/cards.hbs';
-console.log(templateSource);
-
 
 async function getAllEvents() {
   try {
@@ -17,19 +15,12 @@ async function getAllEvents() {
 
 function renderEvents() {
   getAllEvents().then(events => {
-    console.log(events);
   const renderedHtml = templateSource(events);
-  console.log(renderedHtml);
   document.getElementById('container').innerHTML += renderedHtml;
 })
-  // events.forEach(event => {
-  //   const renderedHtml = templateSource(event);
-  //   console.log(renderedHtml);
-  //   document.getElementById('container').innerHTML += renderedHtml;
-  // });
 }
 renderEvents();
-// window.addEventListener('DOMContentLoaded', renderEvents);
+
 
 
 
