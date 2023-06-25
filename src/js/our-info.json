@@ -52,7 +52,7 @@
         {
           "name": "Тарнавський Олександр",
           "work": "work",
-          "photo": "./images/Tarnavsky.jpg",
+          "photo": "./src/images/Tarnavsky.jpg",
            "mail": "cmurtimur@gmail.com",
           "git": "https://github.com/Olexander1234"
         },
