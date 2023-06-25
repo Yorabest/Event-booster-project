@@ -38,14 +38,14 @@
         {
           "name": "Білішук Ілля",
           "work": "work",
-          "photo": "./images/Bilishuk.jpg",
+          "photo": "/src/images/Bilishuk.jpg",
            "mail": "nik333nik888@gmail.com",
           "git": "https://github.com/Niky-Niky"
         },
         {
           "name": "Олександр Савранський",
           "work": "work",
-          "photo": "photo",
+          "photo": "./images/favicon.png",
            "mail": "alexsawranskiy989@gmail.com",
           "git": "https://github.com/AlexSawranskiy"
         },
