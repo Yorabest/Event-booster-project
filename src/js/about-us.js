@@ -9,9 +9,12 @@ import json from './our-info.json';
 // console.log(markup);
 const ourCard = document.querySelector('.js-card-container')
 
-function makeCard(people) {    
-    const a = people.map(people => {
-        console.log(people.photo)
+
+
+function makeCard(people) {
+
+    const itemsTeam = people.map(people => {
+
        return `<li class='about-us-li'>
              <h3 class='our-h3'>${people.name}</h3>
              <img class='our-img' src="./${people.photo}" alt="">
@@ -19,7 +22,6 @@ function makeCard(people) {
              <p class='our-p-mail'>E-mail : ${people.mail}</p>
              <p class='our-p-git'>Github : ${people.git}</p>
         </li>`}).join('')
-    return a
 }
 const murkup = makeCard(json.people)
 console.log(murkup);
