@@ -1,17 +1,24 @@
 import json from './our-info.json'
 
+// console.log(json.people[7].photo);
+// const ourJson = JSON.stringify(json.people)
+// const parse = JSON.parse(ourJson)
+
 const ourCard = document.querySelector('.js-card-container')
 
 function makeCard(people) {
-    const a = people.map(people => 
-        `<li>
-             <h3>${people.name}</h3>
-             <p>Роботу, яку виконував на проекті : ${people.work}</p>
-             <img>${people.photo}</img>
-             <p>E-mail : ${people.mail}</p>
-             <p>Github : ${people.git}</p>
-        </li>`).join('')
+    
+    const a = people.map(people => {
+        console.log(people.photo)
+       return `<li class='about-us-li'>
+             <h3 class='our-h3'>${people.name}</h3>
+             <img class='our-img' src="${people.photo}"></img>
+             <p class='our-p-work'>Роботу, яку виконував на проекті : ${people.work}</p>
+             <p class='our-p-mail'>E-mail : ${people.mail}</p>
+             <p class='our-p-git'>Github : ${people.git}</p>
+        </li>`}).join('')
     return a
 }
-const markup = makeCard(json.people)
-ourCard.innerHTML = markup
+const murkup = makeCard(json.people)
+// console.log(murkup);
+ourCard.innerHTML = murkup
