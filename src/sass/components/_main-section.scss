@@ -55,9 +55,8 @@ img {
 
     justify-content: center;
     align-items: center;
-
     position: relative;
-
+    // overflow: hidden;
 }
 
 
@@ -69,6 +68,7 @@ img {
     border: none;
     border-radius: 30px;
     margin-bottom: 50px;
+    overflow: hidden;
 }
 
 
