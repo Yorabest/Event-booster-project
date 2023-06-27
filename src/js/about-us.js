@@ -1,10 +1,15 @@
-import json from './our-info.json'
-
+import json from './our-info.json';
+// import cards from './team-data';
+// import teamCardTpl from '../template/team-card.hbs'
 // console.log(json.people[7].photo);
 // const ourJson = JSON.stringify(json.people)
 // const parse = JSON.parse(ourJson)
-
+// console.log(cards);
+// const markup = teamCardTpl(cards);
+// console.log(markup);
 const ourCard = document.querySelector('.js-card-container')
+
+
 
 function makeCard(people) {
     const a = people.map(people => 
@@ -18,5 +23,5 @@ function makeCard(people) {
     return a
 }
 const murkup = makeCard(json.people)
-// console.log(murkup);
-ourCard.innerHTML = murkup
+console.log(murkup);
+ourCard.innerHTML = murkup;
