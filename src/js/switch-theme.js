@@ -1,13 +1,16 @@
 const refs = {
-    btnSwitchTheme: document.querySelector('.switch-theme'),
+    switcher: document.querySelector('.js-switch'),
     switchPage: document.querySelector('.tui-page-btn'),
 }
 
-const bodyElment = document.body
 
-refs.btnSwitchTheme.addEventListener('click', switchTheme);
+refs.switcher.addEventListener('change', switchTheme);
 
 function switchTheme() {
-    bodyElment.classList.toggle('light-theme');
-    document.refs.switchPage.classList.toggle('switch-page')
+    if (refs.switcher.checked === true) {
+        document.body.classList.add("light-theme");
+      
+    } else {
+        document.body.classList.remove("light-theme");
+    }
 }
