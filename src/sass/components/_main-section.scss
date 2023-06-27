@@ -57,6 +57,8 @@ img {
     align-items: center;
     position: relative;
     // overflow: hidden;
+    border-radius: 50px 0px 50px 0px;
+    height: 162px;
 }
 
 
@@ -114,26 +116,43 @@ h2 {
     font-size: 16px;
 }
 
-.price {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 17px;
-    color: #FFFFFF;
-    text-align: center;
-    margin-top: 5px;
-    font-size: 16px;
-}
-
   .square {
     box-sizing: border-box;
     position: absolute;
     width: 153px;
     height: 143px;
-    left: 105px;
-    top: 55px;
+    left: 134px;
+    top: 35px;
     border: 1px solid rgba(220, 86, 197, 0.3);
     border-radius: 50px 0px;
     z-index: 1;
+  }
+
+  .place {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+
+  .date {
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+
+  .title {
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: center;
+    line-height: 19.5px;
+    margin-top: 11px;
   }
