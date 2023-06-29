@@ -1,16 +1,16 @@
 <div class="container">
     <div class="list">
         {{#each this}}
-        <div class="item">
+        <div class="item" id="{{id}}">
             <!-- <div class="img"> -->
             <div class="square"></div>
-            <img src="{{imgSrc}}" alt="">
+            <img src="{{images.0.url}}" alt="">
             <!-- </div> -->
             <div class="content">
                 <h2 class="title">{{name}}</h2>
                 <div class="des">
                     <p class="date">{{dates.start.localDate}}</p>
-                    <p class="price">{{location}}</p>
+                    <p class="place">{{dates.timezone}}</p>
                 </div>
             </div>
         </div>
