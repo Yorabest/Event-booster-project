@@ -29,16 +29,9 @@
           "git": "https://github.com/ivanhlibo"
         },
         {
-          "name": "Романенков Ілля",
-          "work": "work",
-          "photo": "photo",
-           "mail": "ilyadep5@gmail.com",
-          "git": "https://github.com/tinomu85"
-        },
-        {
           "name": "Білішук Ілля",
           "work": "work",
-          "photo": "./images/Billishuk.jpg",
+          "photo": "./images/Bilishuk.jpg",
            "mail": "nik333nik888@gmail.com",
           "git": "https://github.com/Niky-Niky"
         },
