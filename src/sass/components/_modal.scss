@@ -21,7 +21,10 @@ height: 641px;
    position: relative;
 }
 
-
+.modal.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
   .modal-content {
   display: flex;
     align-items:center;
