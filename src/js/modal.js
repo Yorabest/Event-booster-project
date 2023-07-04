@@ -11,13 +11,15 @@ const priceText = document.querySelector('.price');
 const container = document.querySelector('#container');
 id = 'vvG1fZ949qhf4C'
 container.addEventListener("click", (event) => {
-  console.log(event.target.id);
+  
+  if(event.target.nodeName !== "IMG"){
+    return
+  }
+  console.log(event.target.parentNode);
   getEventsById(event.target.id);
   modalEl.classList.remove('is-hidden');
-  modalEl.style.display = "fixed";
   renderModalEvent();
   console.log('yes sir');
-  // modalEl.style.display = "block";
   }
 );
 // btnEl.addEventListener("click", () => {
