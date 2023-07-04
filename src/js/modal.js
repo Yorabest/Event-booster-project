@@ -8,20 +8,25 @@ const whoText = document.querySelector('.who');
 const img = document.querySelector('.img');
 const whereText = document.querySelector('.where');
 const priceText = document.querySelector('.price');
+const container = document.querySelector('#container');
 id = 'vvG1fZ949qhf4C'
-// btnEl.addEventListener("click", (event) => {
-//   console.log(event.target.id)
-//   getEventsById(event.target.id);
-//   modalEl.style.display = "block";
-//   }
-// );
-btnEl.addEventListener("click", () => {
+container.addEventListener("click", (event) => {
+  console.log(event.target.id);
+  getEventsById(event.target.id);
   modalEl.classList.remove('is-hidden');
   modalEl.style.display = "fixed";
-  renderModalEvent()
-  console.log('yes sir')
+  renderModalEvent();
+  console.log('yes sir');
+  // modalEl.style.display = "block";
   }
 );
+// btnEl.addEventListener("click", () => {
+//   modalEl.classList.remove('is-hidden');
+//   modalEl.style.display = "fixed";
+//   renderModalEvent()
+//   console.log('yes sir')
+//   }
+// );
 spanEl.addEventListener("click", () => {
   modalEl.style.display = "none";
   }
@@ -44,7 +49,7 @@ document.addEventListener("click", (event) => {
 // console.log(error)
 // }
 console.log(`https://app.ticketmaster.com/discovery/v2/events/${id}.json?apikey=k9IBmovyNPghLZMyMgLEAjSKjhVz1jpl`)
-const MY_BASE_URL = 'https://app.ticketmaster.com/discovery/v2/events/vvG1fZ949qhf4C.json?apikey=k9IBmovyNPghLZMyMgLEAjSKjhVz1jpl'
+const MY_BASE_URL = `https://app.ticketmaster.com/discovery/v2/events/${id}.json?apikey=k9IBmovyNPghLZMyMgLEAjSKjhVz1jpl`
   
 async function getEventsById(){
   try{
