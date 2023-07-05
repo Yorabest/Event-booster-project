@@ -8,8 +8,9 @@ const whoText = document.querySelector('.who');
 const img = document.querySelector('.img');
 const whereText = document.querySelector('.where');
 const priceText = document.querySelector('.price');
-const container = document.querySelector('#container');
-// id = 'vvG1fZ949qhf4C'
+const container = document.querySelector('.container');
+const backdrop = document.querySelector('.backdrop');
+id = 'vvG1fZ949qhf4C'
 
 container.addEventListener("click", (event) => {
   if(event.target.nodeName !== "IMG"){
@@ -18,6 +19,8 @@ container.addEventListener("click", (event) => {
   console.log(event.target.parentNode.id);
   const eventId = event.target.parentNode.id;
   modalEl.classList.remove('is-hidden');
+
+  backdrop.style.visibility = 'visible';
 
   getEventsById(eventId).then(event=>{
     console.log(event);
