@@ -1,4 +1,10 @@
 .light-theme {
-    color: $background-color;
-    background-color: $mainColor;
+background-image: linear-gradient(to right,
+            rgb(255, 255, 255),
+            rgb(76, 72, 72));
+}
+
+.switch-page {
+    background-color: transparent !important; 
+    
 }
