@@ -3,6 +3,8 @@ const refs = {
     switchPage: document.querySelector('.tui-is-selected'),
 }
 
+const currentTheme = localStorage.getItem('theme')
+console.log(currentTheme);
 
 refs.switcher.addEventListener('change', switchTheme);
 
