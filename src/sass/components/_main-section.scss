@@ -59,11 +59,19 @@ img {
     // overflow: hidden;
     border-radius: 50px 0px 50px 0px;
     height: 162px;
+    @media (max-width: 768px) {
+        
+
+    }
+
+    @media (min-width: 1200px) {
+        
+    }
 }
 
 
 .item {
-    padding: 50px 30px;
+    padding: 50px 20px;
     transform: translate(0, -50px);
     backdrop-filter: blur(20px);
     color: #fff;
@@ -121,7 +129,7 @@ h2 {
     position: absolute;
     width: 153px;
     height: 143px;
-    left: 134px;
+    left: 145px;
     top: 35px;
     border: 1px solid rgba(220, 86, 197, 0.3);
     border-radius: 50px 0px;
