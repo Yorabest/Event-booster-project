@@ -40,7 +40,10 @@
 }
 
 .our-img {
-    height: auto;
+    height: 345px;
+    // background-size: contain;
+    object-fit: cover;
+    // background-position: 20%;
 }
 
 .our-p-work {
