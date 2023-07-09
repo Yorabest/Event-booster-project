@@ -1,23 +1,21 @@
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+
+/* Modal Content/Box */
+  .modal{
+    visibility: hidden;
   }
-  
-  /* Modal Content/Box */
-  .modal-content {
-    background-color: #fefefe;
+
+.modal-content {
+  display: flex;
+    
+  background-color: #FFF2FD;
     margin: 15% auto; /* 15% from the top and centered */
     padding: 20px;
     border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
+    width: 930px;
+    height: 1023px; 
+    position: absolute;
+    border-radius: 300px 0px;
+    border-color:transparent;
   }
   
   /* The Close Button */
@@ -33,12 +31,48 @@
     color: black;
     text-decoration: none;
     cursor: pointer;
+
+}
+  .style_header{
+position: relative;
+left: 450px;
+display: flex;
+width: 63px;
+height: 29px;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 29px;
+color: #DC56C5;
   }
-  .is-hidden {
-    opacity: 0;
-    pointer-events: none;
+  .style_tickets-btn{
+    position: relative;
+    left: 450px;
+    justify-content: space-around;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: space-between;
+    background-color: #4C00FE;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 500;
+    width: 145px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
   }
 
-  .modal.is-hidden{
-    transform: translate(-50%, -50%) scale(0.7);
+.style_author-btn{
+    position: relative;
+    left: 450px;
+    width: 225px;
+    height: 40px;
+    background-color: #FFF2FD;
+    border-width: 1px;
+    border-color: #4C00FE;
+    border-radius: 5px;
+    font-size: 16px;
+    color:#4C00FE;
+    position: absolute;
   }

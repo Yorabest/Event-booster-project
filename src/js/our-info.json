@@ -29,16 +29,9 @@
           "git": "https://github.com/ivanhlibo"
         },
         {
-          "name": "Романенков Ілля",
-          "work": "work",
-          "photo": "photo",
-           "mail": "ilyadep5@gmail.com",
-          "git": "https://github.com/tinomu85"
-        },
-        {
           "name": "Білішук Ілля",
           "work": "work",
-          "photo": "/src/images/Bilishuk.jpg",
+          "photo": "./images/Bilishuk.jpg",
            "mail": "nik333nik888@gmail.com",
           "git": "https://github.com/Niky-Niky"
         },
@@ -52,7 +45,7 @@
         {
           "name": "Тарнавський Олександр",
           "work": "work",
-          "photo": "./src/images/Tarnavsky.jpg",
+          "photo": "./images/Tarnavsky.jpg",
            "mail": "cmurtimur@gmail.com",
           "git": "https://github.com/Olexander1234"
         },

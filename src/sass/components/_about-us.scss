@@ -1,21 +1,36 @@
-.js-card-container{
-    color: black;
-}
-.about-us{
-    background-color: rgb(0, 0, 0);
-}
-.about-us-li{
+.js-card-container {    
+    display: flex;
     flex-wrap: wrap;
+    // margin: -15px;
+    color: black;
+    gap: 138px;
+    
+}
+
+// .about-us {
+//     background-color: rgb(0, 0, 0);
+// }
+
+.about-us-li {
+    // gap: 138px;
+    // align-content: center;
+    padding: 5px;
+    width: 330px;
+    height: auto;
     border: 4px solid #dc56c5;
     border-radius: 50px;
-    margin: 50px;
-    width: calc((100% - 50px * 4) /2);
-    position: relative;
-    margin: 10px;
-    border-radius: 4px;
-    background-color: #fff;
+    // margin: 50px;
+    // position: relative;
+    // margin: 15px;
+    // gap: 15px;
+    border-radius: 10px;
+    // background-color: #fff;
+    background-color: transparent;
+    color: #fff;
 }
-.our-h3{
+
+.our-name {
+    padding-top: 7px;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
@@ -23,30 +38,37 @@
     line-height: 20px;
     text-align: center;
 }
-.our-img{
+
+.our-img {
+    height: 345px;
+    // background-size: contain;
+    object-fit: cover;
+    // background-position: 20%;
+}
+
+.our-p-work {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
     text-align: center;
 }
-.our-p-work{
+
+.our-p-mail {
     font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 20px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
     text-align: center;
 }
-.our-p-mail{
+
+.our-p-git {
     font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 20px;
-    text-align: center;
-}
-.our-p-git{
-    font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 20px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
     text-align: center;
 }
