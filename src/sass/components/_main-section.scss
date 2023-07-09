@@ -30,7 +30,9 @@ img {
     display: block;
     height: auto;
     width: 100%;
+    border-radius: 50px 0px 50px 0px;
 }
+
 h1,
 h2,
 h3,
@@ -39,7 +41,7 @@ p {
     margin: 0;
     padding: 0;
 }
-/* ======================================================================= */
+
 .list {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -47,32 +49,20 @@ p {
 }
 
 .item img {
-
     transition: .5s;
+    width: 100%;
+    height: auto;
 }
-
-img {
-
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    // overflow: hidden;
-    border-radius: 50px 0px 50px 0px;
-    height: 162px;
-}
-
 
 .item {
-    padding: 50px 30px;
+    padding: 50px 20px;
     transform: translate(0, -50px);
     backdrop-filter: blur(20px);
     color: #fff;
     border: none;
     border-radius: 30px;
-    // margin-bottom: 10px;
     overflow: hidden;
 }
-
 
 .item .content .price {
     font-size: large;
@@ -82,10 +72,8 @@ img {
     transform: translate(0, -50px);
 }
 
-
 .title .content .add{
     background-color: #b192ef;
-
     color: #fff;
     width: 100%;
     border: none;
@@ -116,37 +104,36 @@ h2 {
     font-size: 16px;
 }
 
-  .square {
+.square {
     box-sizing: border-box;
     position: absolute;
     width: 153px;
     height: 143px;
-    left: 134px;
+    left: 145px;
     top: 35px;
     border: 1px solid rgba(220, 86, 197, 0.3);
     border-radius: 50px 0px;
-    z-index: 1;
-  }
+}
 
-  .place {
+.place {
     font-family: Montserrat;
     font-size: 14px;
     font-weight: 600;
     line-height: 17px;
     letter-spacing: 0em;
     text-align: center;
-  }
+}
 
-  .date {
+.date {
     font-family: Montserrat;
     font-size: 16px;
     font-weight: 400;
     line-height: 20px;
     letter-spacing: 0em;
     text-align: center;
-  }
+}
 
-  .title {
+.title {
     font-family: Montserrat;
     font-size: 16px;
     font-weight: 700;
@@ -155,4 +142,68 @@ h2 {
     text-align: center;
     line-height: 19.5px;
     margin-top: 11px;
-  }
+}
+
+/* Адаптивність для планшетів з мінімальною шириною 768 пікселів */
+@media (min-width: 768px) and (max-width: 1199px) {
+    .container {
+        width: 100%;
+    }
+
+    .list {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 20px;
+        row-gap: 20px;
+        max-width: 960px;
+        margin: 0 auto;
+    }
+
+    .item {
+        flex-basis: calc(50% - 10px);
+    }
+
+    .item .square {
+        left: 204px;
+    }
+}
+
+/* Адаптивність для ноутбуків з мінімальною шириною 1200 пікселів */
+@media (min-width: 1200px) {
+    .list {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .item {
+        flex-basis: 100%;
+    }
+}
+
+
+@media (max-width: 320px) {
+    .container {
+        width: 100%;
+
+    }
+
+    .list {
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 20px;
+        row-gap: 20px;
+        max-width: 280px;
+        margin: 0 auto;
+    }
+
+    .item {
+        flex-basis: calc(100% - 20px);
+    }
+
+    .item .square {
+        left: 124px;
+    }
+    .square {
+        width: 153px;
+        height: 135px;
+        top: 35px;
+    }
+
+}

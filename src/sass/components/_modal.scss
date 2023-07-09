@@ -1,23 +1,66 @@
 
 /* Modal Content/Box */
-  .modal-content {
-    background-color: #FFF2FD;
-    margin: 15% auto; /* 15% from the top and centered */
-    padding: 20px;
-    border: 1px solid #888;
-    width: 930px;
-    height: 1023px; 
-    position: relative;
-    border-radius: 300px 0px;
-    border-color:transparent;
+  .img{
+    width: 360px;
+    height: 641px;
+    border-radius: 20px;
+
+  }
+
+  .backdrop{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+
+
+
+.backdrop.is-hidden {
+  opacity: 0;  
+  
+  pointer-events: none;
+}
+.modal {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  gap:60px;
+  top: 50%;
+  left: 50%;
+  width: 942px;
+  height: 1023px; 
+  border-radius: 300px 0;
+  padding: 40px;
+  background-color: white;
+  transform: translate(-50%, -50%) scale(1);
+//   transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  
+  // @media(min-width: $mobile){
+  //   width: 450px;
+  //   max-height: 609px;
+  //   height: 100%;
   }
   
+  .modal-content {
+    display: flex;
+    align-items:center;
+  background-color: #FFF2FD;
+    margin: 30px; /* 15% from the top and centered */
+    padding: 20px;
+  }
+   
+
   /* The Close Button */
   .close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
+    position: absolute;
+    color: #4C00FE; 
+    top: 0;  
+    right: 0;   
+    width: 1px;
+    height: 1px;
   }
   
   .close:hover,
@@ -47,9 +90,6 @@
 
 }
   .style_header{
-position: relative;
-left: 450px;
-display: flex;
 width: 63px;
 height: 29px;
 font-family: 'Montserrat';
@@ -60,12 +100,7 @@ line-height: 29px;
 color: #DC56C5;
   }
   .style_tickets-btn{
-    position: relative;
-    left: 450px;
-    justify-content: space-around;
-    // display: flex;
-    // flex-direction: column;
-    // align-items: space-between;
+    display: block;
     background-color: #4C00FE;
     color: #FFFFFF;
     font-size: 16px;
@@ -74,11 +109,10 @@ color: #DC56C5;
     height: 40px;
     border: none;
     border-radius: 5px;
+    margin-bottom: 20px;
   }
 
 .style_author-btn{
-    position: relative;
-    left: 450px;
     width: 225px;
     height: 40px;
     background-color: #FFF2FD;
@@ -87,5 +121,10 @@ color: #DC56C5;
     border-radius: 5px;
     font-size: 16px;
     color:#4C00FE;
-    position: absolute;
+    margin-top: 55px;
+  }
+
+  .text{
+    color: #000;
+    margin-bottom: 20px;
   }

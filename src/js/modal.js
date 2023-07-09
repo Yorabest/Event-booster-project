@@ -1,79 +1,66 @@
 import axios from "axios";
-const modalEl = document.querySelector("#myModal");
-const btnEl = document.querySelector("#myBtn");
+const modalEl = document.querySelector(".modal");
+const btnEl = document.querySelector(".my-button");
 const spanEl = document.querySelector(".close");
 const infoText = document.querySelector('.info');
-const whenText = document.querySelector('.when')
-// id = 'vvG1fZ949qhf4C'
-// btnEl.addEventListener("click", (event) => {
-//   console.log(event.target.id)
-//   getEventsById(event.target.id);
-//   modalEl.style.display = "block";
-//   }
-// );
-btnEl.addEventListener("click", () => {
-  modalEl.style.display = "block";
-  renderModalEvent()
+const whenText = document.querySelector('.when');
+const whoText = document.querySelector('.who');
+const img = document.querySelector('.img');
+const whereText = document.querySelector('.where');
+const priceText = document.querySelector('.price');
+const container = document.querySelector('.container');
+const backdrop = document.querySelector('.backdrop');
+
+container.addEventListener("click", (event) => {
+  console.log('hello');
+  if(event.target.nodeName !== "IMG"){
+    return
+  }
+  console.log(event.target.parentNode.id);
+  const eventId = event.target.parentNode.id;
+  backdrop.classList.remove('is-hidden');
+
+  getEventsById(eventId).then(event=>{
+    console.log(event);
+    renderModalEvent(event)
+  });
+  
+  console.log('yes sir');
   }
 );
+
 spanEl.addEventListener("click", () => {
-  modalEl.style.display = "none";
+  backdrop.classList.add('is-hidden');
   }
 );
 
 document.addEventListener("click", (event) => {
-  if (event.target === modalEl) {
-    modalEl.style.display = "none";
+  console.log(event.target);
+  if (event.target === backdrop) {
+     backdrop.classList.add('is-hidden');
     }
+   
   }
 );
-// тобі щось видає? Якщо ні, то тримай fetch, сонце
-// fetch(`https://app.ticketmaster.com/discovery/v2/events/${id}.json?apikey=${apikey}`)
-// id можеш тимчасово поставтити вручну, я тобі кидала, а ключ або свій, або, якщо немає, то пиши, я тобі Ірин скину
-// try{
-// const MY_BASE_URL = https://app.ticketmaster.com/discovery/v2/events/G5diZfkn0B-bh.json?apikey=k9IBmovyNPghLZMyMgLEAjSKjhVz1jpl
-// axios.get(MY_BASE_URL)
-// .then(console.log)
-// } catch (error){
-// console.log(error)
-// }
-const MY_BASE_URL = 'https://app.ticketmaster.com/discovery/v2/events/vvG1fZ949qhf4C.json?apikey=k9IBmovyNPghLZMyMgLEAjSKjhVz1jpl'
+
   
-async function getEventsById(){
+async function getEventsById(id){
+  const MY_BASE_URL = `https://app.ticketmaster.com/discovery/v2/events/${id}.json?apikey=k9IBmovyNPghLZMyMgLEAjSKjhVz1jpl`
   try{
-  const res = await axios.get(MY_BASE_URL);
-  // console.log(res);
-  const event = await res.data;
-  // console.log(event);
+    const res = await axios.get(MY_BASE_URL);
+    const event = await res.data;
   return event;
   } catch (error){
   console.log(error)
   }
 }
 
-function renderModalEvent() {
-  getEventsById().then(event=>{
-    infoText.textContent = event.pleaseNote
-    infoText.style.color = 'black';
-
-    whenText.textContent = event.dates.start.localDate
-    whenText.style.color = 'black';
-
-  })
+function renderModalEvent(event) {  
+    img.src = event.images[8].url;
+    infoText.textContent = event.pleaseNote;
+    whenText.textContent = event.dates.start.localDate;
+    whoText.textContent = event.name;
+    whereText.textContent = event.locale;
+    priceText.textContent = event.priceRanges[0].max;
 }
 
-
-
-// function makeMarkUp(events){
-//   return events.map(({name, image}) => {
-//     return `<li>
-//     <img src="${image}" alt="${name}">
-//     <button type="button"> Add to cart </button>
-//     </li>`
-//   }
-//   )
-// }
-// console.log(makeMarkUp());
-// const myFetch = getEventsById()
-// console.log(getEventsById())
-console.log('test');
