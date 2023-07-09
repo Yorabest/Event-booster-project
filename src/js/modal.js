@@ -10,17 +10,15 @@ const whereText = document.querySelector('.where');
 const priceText = document.querySelector('.price');
 const container = document.querySelector('.container');
 const backdrop = document.querySelector('.backdrop');
-id = 'vvG1fZ949qhf4C'
 
 container.addEventListener("click", (event) => {
+  console.log('hello');
   if(event.target.nodeName !== "IMG"){
     return
   }
   console.log(event.target.parentNode.id);
   const eventId = event.target.parentNode.id;
-  modalEl.classList.remove('is-hidden');
-
-  backdrop.style.visibility = 'visible';
+  backdrop.classList.remove('is-hidden');
 
   getEventsById(eventId).then(event=>{
     console.log(event);
@@ -32,14 +30,16 @@ container.addEventListener("click", (event) => {
 );
 
 spanEl.addEventListener("click", () => {
-  modalEl.style.display = "none";
+  backdrop.classList.add('is-hidden');
   }
 );
 
 document.addEventListener("click", (event) => {
-  if (event.target === modalEl) {
-    modalEl.style.display = "none";
+  console.log(event.target);
+  if (event.target === backdrop) {
+     backdrop.classList.add('is-hidden');
     }
+   
   }
 );
 
@@ -56,23 +56,11 @@ async function getEventsById(id){
 }
 
 function renderModalEvent(event) {  
-    img.src = event.images[0].url
-    img.style.width = '360px'
-
-    infoText.textContent = event.pleaseNote
-    infoText.style.color = 'black';
-
-    whenText.textContent = event.dates.start.localDate
-    whenText.style.color = 'black';
-
-    whoText.textContent = event.name
-    whoText.style.color = 'black';
-
-    whereText.textContent = event.locale
-    whereText.style.color = 'black';
-
-    priceText.textContent = event.priceRanges[0].max
-    priceText.style.color = 'black';
-  
+    img.src = event.images[8].url;
+    infoText.textContent = event.pleaseNote;
+    whenText.textContent = event.dates.start.localDate;
+    whoText.textContent = event.name;
+    whereText.textContent = event.locale;
+    priceText.textContent = event.priceRanges[0].max;
 }
 
