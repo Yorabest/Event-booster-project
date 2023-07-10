@@ -1,9 +1,9 @@
 
 /* Modal Content/Box */
   .img{
-    width: 360px;
-    height: 641px;
-    border-radius: 20px;
+    width: 280px;
+    height: 450px;
+    border-radius: 120px 20px;
 
   }
 
@@ -28,8 +28,8 @@
   display: flex;
   align-items: center;
   position: absolute;
-  width: 595px;
-  height: 831px;
+  width: 800px;
+  height: 700px;
   gap:60px;
   top: 50%;
   left: 50%; 
@@ -37,7 +37,7 @@
   padding: 40px;
   background-color: white;
   transform: translate(-50%, -50%) scale(1);
-//   transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
   
   .modal-content {
@@ -78,6 +78,7 @@
 .info {
   display: flex;
   margin-bottom: 10px;
+  font-size: 12px;
 }
 
 .style_tickets-btn{
@@ -106,7 +107,7 @@ color: #DC56C5;
     height: 40px;
     border: none;
     border-radius: 5px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
   }
 
 .style_author-btn{
@@ -117,9 +118,11 @@ color: #DC56C5;
     width: 255px;
     height: 40px;
     background-color: #FFF2FD;
+    margin-top: 10px;
+    margin-left: 15px;
     border-width: 1px;
     border-color: #4C00FE;
-    border-radius: 5px;
+    border-radius: 20px 10px;
     font-size: 16px;
     color:#4C00FE;
   }
